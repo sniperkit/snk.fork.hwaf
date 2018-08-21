@@ -1,19 +1,25 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	log "github.com/Sirupsen/logrus"  /* structured logger lib */
-	"github.com/flier/gohs/hyperscan" /* Hyperscan lib */
-	"github.com/spf13/cobra"          /* CLI lib */
-	"github.com/spf13/viper"          /* Configuration lib */
-	"github.com/valyala/fasthttp"     /* http parse lib */
 	"os"
 	"strconv"
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/flier/gohs/hyperscan" /* Hyperscan lib */
+	log "github.com/sirupsen/logrus"  /* structured logger lib */
+	"github.com/spf13/cobra"          /* CLI lib */
+	"github.com/spf13/viper"          /* Configuration lib */
+	"github.com/valyala/fasthttp"     /* http parse lib */
 )
 
 // with sync for resource lock
